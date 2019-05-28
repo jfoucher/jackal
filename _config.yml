@@ -1,28 +1,31 @@
 # The main config file for your Jekyll template
 
 # Site settings
-title: Jackal               # used for the html title of every page
-desc: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Chez moi               # used for the html title of every page
+desc: Tout ce qui se passe chez moi, j'aimerais à terme mettre des infos sur la meteo, la température intérieure, etc... Tout ça sur mon raspberry pi première génération
 
-url: http://jackal.com      # put your website hosting url here
+url: https://home.jfoucher.com      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
-permalink: /:year/:title/   # how should we display posts url
+permalink: /:title/   # how should we display posts url
 
 # Meta settings
-email: jackal@gmail.com
-author: The Jackal
-twitter_username: clenemt
-github_username: clenemt
+email: jfoucher@gmail.com
+author: Jonathan Foucher
+twitter_username: jfoucher
+github_username: jfoucher
 github_source: jackal
+youtube_channel: UCo3zpVSXYsoT2bqC3c-7YUg
+youtube_api_key: AIzaSyBf8snHMD4PoC70GEmcWPlo8pUaqMigXn4
+youtube_save_path: saved_videos
+
+sass:
+  style: compressed
 
 # Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+#google_analytics: 'UA-XXXXXXXX-X'
 
 # Pagination settings
-paginate: 5                           # number of posts to show per page
+paginate: 10                           # number of posts to show per page
 paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
 
 # Navigation settings
@@ -31,16 +34,16 @@ paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf
 navigation:
   - title: Articles
     url: /articles/
-    desc: Stuffs I write about
-  - title: Projects
-    url: /projects/
-    desc: Stuffs I like to do
-  - title: Work
-    url: /work/
-    desc: Stuffs I hate to do
-  - title: About
-    url: /about/
-    desc: Learn about me
+    desc: Mes articles
+  - title: Projets
+    url: /projets/
+    desc: Les choses que j'aime faire
+  - title: Vidéos
+    url: /videos/
+    desc: Les choses que j'aime aussi faire
+  - title: Moi
+    url: /moi/
+    desc: Tu n'as pas mieux à lire ?
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
@@ -66,4 +69,5 @@ exclude:
   - vendor
 gems:
   - jekyll-paginate
+  - jekyll-youtube
 

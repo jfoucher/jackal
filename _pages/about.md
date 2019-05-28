@@ -1,28 +1,28 @@
 ---
 layout: page
 title: About
-subtitle: I am a smart heading.
-desc: About me.
-permalink: /about/
+subtitle: Tu n'as pas mieux à lire ?
+desc: Je ne suis pas si intéressant.
+permalink: /moi/
 ---
 
-<div class="pretty-links">
+<div class="pretty-links" markdown="1">
 
-<div class="lead lead-about">Some intro text that is eye catching and should put you reader at ease and confident in your skills.
+<div class="lead lead-about">Bon ok, puisque tu es là, allons-y.
 </div>
 
-{::nomarkdown} 
+
 <figure class="site-profile">
-    <img src="{{ site.baseurl }}/assets/img/profile.png">
+    <img src="{{ site.baseurl }}/assets/img/jonathanfoucher-sm.jpg">
 </figure>
-{:/}
 
-Neve aethere orbe hic *virginis trunco* in spreto diuque latarumque, mea? Ultima
-sulcum antris conlapsosque potiere curvat Phasias superas adpulit vertex est
-Elei est fumificisque, puniceo? Et dulcis me Argo precibus: haec blanditiae
-[candida](http://murmure.org/.html).
 
+Je fais des [vidéos assez nulles sur youtube](https://www.youtube.com/channel/UCo3zpVSXYsoT2bqC3c-7YUg), je ne suis pas sur [facebook](https://fb.me/jfoucher). Par contre je suis pas mal sur [github](https://github.com/jfoucher) et un peu trop sur mon ordi à [écrire](/articles) et [à coder](https://github.com/jfoucher/Mailocal) [des trucs](https://github.com/jfoucher/Lecteur) [en tous genres](https://github.com/jfoucher/Labyrinth)...
+
+{% comment %}
 ---
+
+
 
 ## Quem fata quamvis
 
@@ -76,3 +76,4 @@ eloquioque sustulit, parentque monte sanguine steterat Atlas manet.
 
 </div>
 
+{% endcomment %} 

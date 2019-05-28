@@ -160,6 +160,32 @@ p.post-desc {
   }
 }
 
+// Page videos ==================
+
+.video {
+  margin-right: $spacer;
+  font-size: 1rem;
+
+  .video-thumb {
+    width: 100%;
+  }
+  a {
+    text-decoration:none;
+    display:block;
+    h4 {
+      font-size: small;
+    }
+  }
+}
+@include mq-up(md) {
+  .videos {
+    margin-top: $spacer2;
+  }
+
+  .video-title {
+    margin-bottom: $spacer2;
+  }
+}
 // PAGE ABOUT ====================================
 
 .lead-about {
