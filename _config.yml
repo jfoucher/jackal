@@ -14,9 +14,11 @@ author: Jonathan Foucher
 twitter_username: jfoucher
 github_username: jfoucher
 github_source: jackal
-youtube_channel: UCo3zpVSXYsoT2bqC3c-7YUg
-youtube_api_key: AIzaSyBf8snHMD4PoC70GEmcWPlo8pUaqMigXn4
-youtube_save_path: saved_videos
+youtube:
+  channel: UCo3zpVSXYsoT2bqC3c-7YUg
+  api_key: YOUTUBE_API_KEY
+  save_dir: assets/videos
+  number: 12
 
 sass:
   style: compressed

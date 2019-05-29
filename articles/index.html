@@ -16,16 +16,23 @@ desc: Des choses que j'écris
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
       <h4 class="post-title">{{ post.title }}</h4>
       <time class="post-date" datetime="{{ post.date }}">
-          {% assign d = post.date | date: "%-d" %}
-          {% assign m = post.date | date: "%B" %}
-          {% case m %}
-            {% when 'April' or 'May' or 'June' %}Printemps
-            {% when 'July' or 'August' or 'September' %}Été
-            {% when 'October' or 'Npvember' or 'December' %}Automne
-            {% when 'January' or 'February' or 'March' %}Hiver
-            {% else %}{{ post.date | date: "%b" }}.
-            {% endcase %}
-          {{ post.date | date: "%Y" }}
+          {% assign m = post.date | date: "%b" %}
+        {% case m %}
+          {% when 'April' %}Printemps
+          {% when 'May'  %}Printemps
+          {% when 'June' %}Printemps
+          {% when 'July' %}Été
+          {% when 'August' %}Été
+          {% when 'September' %}Été
+          {% when 'October' %}Automne
+          {% when 'November' %}Automne
+          {% when 'December' %}Automne
+          {% when 'January'  %}Hiver
+          {% when 'February' %}Hiver
+          {% when 'March' %}Hiver
+          {% else %}{{ post.date | date: "%b" }}.
+          {% endcase %}
+        {{ post.date | date: "%Y" }}
       </time>
       <p class="post-desc">{% if post.desc %}{{ post.desc }}{% else %}{{ post.excerpt }}{% endif %}</p>
     </a>
